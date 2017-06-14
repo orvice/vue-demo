@@ -1,40 +1,30 @@
 <template>
     <div id="footer">
-        <footer class="footer">
-            <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="https://www.creative-tim.com">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://presentation.creative-tim.com">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://blog.creative-tim.com">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
-                                MIT License
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright">
-                    &copy;
-                    2017
-                    , Designed by
-                    <a href="http://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-                    <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
-                </div>
+        <div class="uk-section-small">
+            <div class="uk-container uk-container-expand uk-text-center uk-position-relative">
+
+                <ul class="uk-subnav tm-subnav uk-flex-inline uk-flex-center uk-margin-remove-bottom" uk-margin>
+                    <li>
+                        <span>Version <span uikit-version></span></span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/uikit/uikit/stargazers"><span class="uk-margin-small-right"
+                                                                                  uk-icon="icon: star"></span><span
+                                uikit-stargazers>8100</span> Stargazers</a>
+                    </li>
+                    <li>
+                        <a class="uk-text-lowercase" href="https://twitter.com/getuikit"><span
+                                class="uk-margin-small-right" uk-icon="icon: twitter"></span>@getuikit</a>
+                    </li>
+                    <li>
+                        <a href="https://gitter.im/uikit/uikit"><span class="uk-margin-small-right"
+                                                                      uk-icon="icon: gitter"></span>Community</a>
+                    </li>
+                </ul>
+
+
             </div>
-        </footer>
+        </div>
     </div>
 </template>
 <script>
