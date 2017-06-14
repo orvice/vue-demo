@@ -4,11 +4,15 @@ import Index from './pages/Index.vue';
 import Navbar from './components/Navbar.vue';
 //import analytics from './analytics.js';
 // //import navigation from '../docs/app/navigation.json';
-import App from './App.vue'
+//import App from './App.vue'
 // Pages
 //import IndexPage from './pages/index.vue';
 //import ErrorPage from './pages/404.vue';
 
+//import plugin from './assets/js/icons.js'
+//import UIkit from './assets/js/uikit.js'
+
+import UIkit from 'uikit'
 
 Vue.use(VueRouter);
 
@@ -40,7 +44,7 @@ new Vue({
 
     el: '#app',
 
-    extends: App,
+    extends: Index,
 
     data: () => ({
         page: false,

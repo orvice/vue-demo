@@ -41,7 +41,7 @@
     @import "../assets/scss/mixins-theme.scss"
 
     // 3. Your custom mixin overwrites.
-    @mixin hook-card() { color: #000 }
+    // @mixin hook-card() { color: #000 }
 
     // 4. Import UIkit.
     @import "../assets/scss/uikit-theme.scss"

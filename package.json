@@ -9,6 +9,11 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "highlightjs": "^9.10.0",
+    "icons": "^0.1.1",
+    "jquery": "^3.2.1",
+    "tls": "0.0.1",
+    "uikit": "^3.0.0-beta.25",
     "vue": "^2.1.0",
     "vue-mdl": "^1.1.1",
     "vue-resource": "^1.2.0",
