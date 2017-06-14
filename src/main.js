@@ -12,6 +12,9 @@ import Navbar from './components/Navbar.vue';
 //import plugin from './assets/js/icons.js'
 //import UIkit from './assets/js/uikit.js'
 
+import  autotrack from 'autotrack'
+import marked from 'marked'
+import jquery from 'jquery'
 import UIkit from 'uikit'
 
 Vue.use(VueRouter);

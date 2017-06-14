@@ -1,30 +1,43 @@
 <template>
-    <!-- Navbar -->
-    <nav class="navbar navbar-toggleable-md  fixed-top bg-primary navbar-transparent  " color-on-scroll="500">
-        <div class="container">
-            <div class="navbar-translate">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar bar1"></span>
-                    <span class="navbar-toggler-bar bar2"></span>
-                    <span class="navbar-toggler-bar bar3"></span>
-                </button>
-                <a class="navbar-brand" href="/" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
-                    Now Ui Kit - Docs
-                </a>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="../assets/img/blurred-image-1.jpg">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Back to Kit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Have an issue?</a>
-                    </li>
-                </ul>
-            </div>
+
+    <div class="uk-navbar-container tm-navbar-container" uk-sticky="media: 960">
+        <div class="uk-container uk-container-expand">
+            <nav class="uk-navbar">
+
+                <div class="uk-navbar-left">
+
+                    <router-link class="uk-navbar-item uk-logo" to="/">
+                        <canvas class="uk-margin-small-right" width="28" height="34" uk-svg
+                                :src="'./images/uikit-logo.svg'"></canvas>
+                        UIkit
+
+                    </router-link>
+
+                </div>
+
+                <div class="uk-navbar-right">
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <router-link to="/pro" tag="li"><a>Pro</a></router-link>
+                        <li><a href="./docs/introduction">Documentation</a></li>
+                        <router-link to="/changelog" tag="li"><a>Changelog</a></router-link>
+                    </ul>
+
+                    <div class="uk-navbar-item uk-visible@m">
+                        <router-link class="uk-button uk-button-default tm-button-default uk-icon" to="/download"
+                                     activeClass="page-active">Download
+                            <canvas uk-icon="icon: download" width="20" height="20"></canvas>
+                        </router-link>
+                    </div>
+
+                    <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>
+
+                </div>
+
+            </nav>
         </div>
-    </nav>
-    <!-- End Navbar -->
+    </div>
+
 </template>
 <script>
     export default {
